@@ -8,6 +8,8 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
   vite: {
+    // Empty array added to satisfy Cloudflare Wrangler's automatic deployment parser
+    plugins: [],
     host: true,
     server: {
       host: true,
